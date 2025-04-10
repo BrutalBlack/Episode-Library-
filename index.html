@@ -3,21 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="6a97888e-site-verification" content="4c861e73b6b6558fc5b91dc1c8225650">
-  <title>Anime Episodes</title>
+  <title>BeyWatch - Watch Anime Episodes Free</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background: #111;
       color: white;
+    }
+    header {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      padding: 20px;
       text-align: center;
     }
-    #player {
-      margin-top: 50px;
-      width: 90%;
-      max-width: 800px;
-      height: 450px;
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .episode-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .episode-card {
+      background: #222;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.2s;
+      cursor: pointer;
+      text-align: center;
+    }
+    .episode-card:hover {
+      transform: scale(1.03);
+    }
+    .episode-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .episode-title {
+      padding: 10px;
+      font-weight: bold;
     }
   </style>
 </head>
+<body>
+
+  <header>
+    <h1>BeyWatch</h1>
+    <p>Watch Your Favorite Anime Episodes in HD</p>
+  </header>
+
+  <div class="episode-grid">
+    <div class="episode-card" onclick="location.href='ep1.html'">
+      <img src="https://via.placeholder.com/300x170?text=Episode+1" alt="Episode 1 Thumbnail">
+      <div class="episode-title">Episode 1 - Valt's Challenge</div>
+    </div>
+    <div class="episode-card" onclick="location.href='ep2.html'">
+      <img src="https://via.placeholder.com/300x170?text=Episode+2" alt="Episode 2 Thumbnail">
+      <div class="episode-title">Episode 2 - Lui Strikes</div>
+    </div>
+    <!-- Add more episodes here -->
+  </div>
+
+</body>
+</html>
